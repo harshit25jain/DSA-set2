@@ -22,3 +22,10 @@ public:
         return res;
     }
 };
+
+/*
+We use a bucket sort approach:
+Count the frequency of each character.
+Use an array of strings (bucket[]) where bucket[i] holds all characters that occur i times.
+Since max frequency can be at most s.size(), we go from highest to lowest to build the result.
+*/
