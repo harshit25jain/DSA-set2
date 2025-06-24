@@ -14,9 +14,9 @@ public:
     }
 };
 /*
-I first count the frequency of each character using a map. 
-For building a palindrome, I add the full count of all even-frequency characters. 
-For odd frequencies, I use count - 1 so that it becomes even and fits on both sides of the palindrome.
-If there’s at least one odd-count character, I add 1 to place it in the center.
-This ensures I get the maximum possible palindrome length.
-The variable k acts as a flag to track if any character has an odd frequency.*/
+1.I first count the frequency of each character using a map. 
+2.For building a palindrome, I add the full count of all even-frequency characters. 
+3.For odd frequencies, I use count - 1 so that it becomes even and fits on both sides of the palindrome.
+4.If there’s at least one odd-count character, I add 1 to place it in the center.
+5.This ensures I get the maximum possible palindrome length.
+6.The variable k acts as a flag to track if any character has an odd frequency.*/
