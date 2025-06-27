@@ -20,3 +20,14 @@ public:
         return false;
     }
 };
+
+/*
+First, build a simple target frequency map that we will use to check for permutations on s1.
+Use a sliding window of size s1.size() across s2, maintaining a running frequency map (mapS2) for the current window. As the window expands, add the new character on the right.
+If the size of our current window becomes larger than the size of s1, shrink the window by:
+Decrementing the frequency of the character on the left side of the window. If the frequency becomes zero, remove it from the map of s2.
+And, incrementing the left index of our window.
+Finally, with the two substrings now equal in size, 
+check if the two hash tables are the same. Return true if they match exactly.
+If, after our right side pointer reaches the end of s2, we still don't have matching hash tables, return false.
+*/
