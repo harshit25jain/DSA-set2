@@ -19,3 +19,10 @@ public:
         return dp[n][n];
     }
 };
+/*
+reverse the original string.
+Use a 2D DP table where dp[i][j] stores the length of the LCS of s[0..i-1] and reversed_s[0..j-1].
+If characters match, dp[i][j] = 1 + dp[i-1][j-1].
+If not, dp[i][j] = max(dp[i-1][j], dp[i][j-1]).
+Final answer is dp[n][n].
+*/
