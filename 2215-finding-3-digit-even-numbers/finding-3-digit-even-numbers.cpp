@@ -29,3 +29,15 @@ public:
 
     }
 };
+/*
+APPROACH
+First, we create a frequency array mpp to count how many times each digit (0–9) appears.
+Then we loop:
+For the hundreds digit from 1 to 9 (it can't be 0 or it wouldn't be a 3-digit number),
+For each valid hundreds digit, try all digits (0 to 9) for the tens digit.
+For each valid tens digit, try all even digits (0 to 8 step 2) for the units digit.
+While building combinations, we make sure that we don’t use a digit more than it appears in the original input.
+For each valid (hundreds, tens, units) combination, form the number and add to the result.
+
+*/
+
